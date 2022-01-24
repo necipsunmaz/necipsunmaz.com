@@ -12,7 +12,7 @@
         <a class="header-navbar-link home" href="/" {% if permalink=="/" %}aria-current="page" {% endif %}>Anasayfa</a>
         {%- assign navLinks="Hakkımda,Blog,İletişim" | split: ',' -%}
         {%- for link in navLinks -%}
-        <a class="header-navbar-link" href="/{{ link | slugify }}/" {% if permalink==link -%} aria-current="page" {%-
+        <a class="header-navbar-link" href="/{{ link | slug }}/" {% if permalink==link -%} aria-current="page" {%-
           endif -%} {% if link=='blog' and isBlogPage -%} aria-current="page" {%- endif -%}>
           {{- link -}}
         </a>

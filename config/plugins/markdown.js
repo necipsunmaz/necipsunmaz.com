@@ -23,7 +23,7 @@ const markdownLib = markdownIt({
     }),
   })
   .use(markdownItTocDoneRight, {
-    placeholder: `{:toc}`, // same as Jekyll
+    placeholder: `{:toc}`,
     slugify: slugifyString,
     containerId: 'toc',
     listClass: 'list toc-list',

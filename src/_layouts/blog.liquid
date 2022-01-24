@@ -25,7 +25,7 @@ preloads:
         {%- assign popularCategories = collections.popularCategories -%}
         {%- for category in popularCategories %}
         <li>
-          <a href="{{ category.href }}" class="pill" data-shape="round" data-size="sm" {% if
+          <a href="{{ category.href | slug }}" class="pill" data-shape="round" data-size="sm" {% if
             pageCategory==category.title -%} aria-current="page" {%- endif -%}>
             {{ category.title }}&nbsp;<span class="pill-count" aria-label="{{ category.count }} posts">
               {{ category.count}}

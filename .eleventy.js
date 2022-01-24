@@ -79,7 +79,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('toAbsoluteUrl', toAbsoluteUrl);
   eleventyConfig.addFilter('stripNewlines', stripNewlines);
   eleventyConfig.addFilter('stripHtml', stripHtml);
-  eleventyConfig.addFilter('slugify', slugifyString);
+  eleventyConfig.addFilter('slug', slugifyString);
   eleventyConfig.addFilter('toJson', JSON.stringify);
   eleventyConfig.addFilter('fromJson', JSON.parse);
   eleventyConfig.addFilter('getLatestCollectionItemDate', getLatestCollectionItemDate);

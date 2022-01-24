@@ -12,7 +12,7 @@
     <ul class="post-preview-tags post-meta-tags" aria-label="Tags">
       {%- for category in post.data.categories -%}
         <li>
-          <a href="/kategoriler/{{ category }}/" class="underlined-link post-preview-tag post-meta-tag" aria-label="{{ category }}">
+          <a href="/kategoriler/{{ category | slug }}/" class="underlined-link post-preview-tag post-meta-tag" aria-label="{{ category | slug }}">
             {{- category -}}
           </a>
         </li>
