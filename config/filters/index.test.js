@@ -10,7 +10,7 @@ const {
   toAbsoluteUrl,
   getLatestCollectionItemDate,
 } = require('.');
-const site = require('../../src/_data/site');
+const env = require('../../src/_data/env');
 
 describe('custom 11ty filters', () => {
   describe('limit', () => {
@@ -180,19 +180,19 @@ describe('custom 11ty filters', () => {
   });
   describe('toAbsoluteUrl', () => {
     it('handles relative paths that start with a slash', () => {
-      site.url = 'https://site.com';
+      env.url = 'https://site.com';
       expect(toAbsoluteUrl('/some/path/')).toEqual(`https://site.com/some/path/`);
     });
     it('handles site URL that has a trailing slash', () => {
-      site.url = 'https://site.com/';
+      env.url = 'https://site.com/';
       expect(toAbsoluteUrl('some/path/')).toEqual(`https://site.com/some/path/`);
     });
     it('handles both site URL with trailing slash and url with preceding slash', () => {
-      site.url = 'https://site.com/';
+      env.url = 'https://site.com/';
       expect(toAbsoluteUrl('/some/path/')).toEqual(`https://site.com/some/path/`);
     });
     it('throws an error if the argument is not a string', () => {
-      site.url = 'https://site.com/';
+      env.url = 'https://site.com/';
       expect(() => toAbsoluteUrl(42)).toThrow();
     });
   });

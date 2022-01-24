@@ -6,18 +6,18 @@ excludeFromSitemap: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ site.title }}</title>
-  <subtitle>{{ site.description }}</subtitle>
+  <title>{{ env.title }}</title>
+  <subtitle>{{ env.description }}</subtitle>
   <link href="{{ 'feed.xml' | toAbsoluteUrl }}" rel="self"/>
-  <link href="{{ site.url }}/" rel="alternate" type="text/html"/>
+  <link href="{{ env.url }}/" rel="alternate" type="text/html"/>
   <updated>{{ collections.posts | getLatestCollectionItemDate | toIsoString }}</updated>
-  <id>{{ site.url }}/</id>
+  <id>{{ env.url }}/</id>
   <author>
-    <name>{{ site.author }}</name>
-    <email>{{ site.email }}</email>
+    <name>{{ env.author }}</name>
+    <email>{{ env.email }}</email>
   </author>
   {% for post in collections.posts %}
-  {%- assign absolute_post_url = site.url | append: post.url -%}
+  {%- assign absolute_post_url = env.url | append: post.url -%}
   <entry>
     <title>{{ post.data.title | escape }}</title>
     <link href="{{ absolute_post_url }}"/>

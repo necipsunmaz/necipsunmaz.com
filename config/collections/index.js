@@ -1,6 +1,6 @@
 const lodash = require('lodash');
 const { getAllUniqueKeyValues, slugifyString } = require('../utils');
-const site = require('../../src/_data/site');
+const env = require('../../src/_data/env');
 const { limit } = require('../filters');
 const { dir } = require('../constants');
 
@@ -23,7 +23,7 @@ const getAllUniqueCategories = (collection) => {
 // Blog posts by category, for pagination
 // Adapted for use from: https://www.webstoemp.com/blog/basic-custom-taxonomies-with-eleventy/
 const getPostsByCategory = (collection) => {
-  const postsPerPage = site.pagination.itemsPerPage;
+  const postsPerPage = env.pagination.itemsPerPage;
   const blogPostsByCategory = [];
 
   const allPosts = getAllPosts(collection);

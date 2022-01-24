@@ -1,4 +1,4 @@
-{% assign params = "?utm_source=" | append: site.url | append: "&utm_medium=referral" %}
+{% assign params = "?utm_source=" | append: env.url | append: "&utm_medium=referral" %}
 ## Atıflar
 Yazıda kullanılan görseller; <br />
 {%- assign attribution=attributions | split: ',' -%}

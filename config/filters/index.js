@@ -1,7 +1,7 @@
 const lodash = require('lodash');
 const sass = require('sass');
 const markdownLib = require('../plugins/markdown');
-const site = require('../../src/_data/site');
+const env = require('../../src/_data/env');
 const { throwIfNotType } = require('../utils');
 
 /** Returns the first `limit` elements of the the given array. */
@@ -66,7 +66,7 @@ const stripHtml = (str) => {
 const toAbsoluteUrl = (url) => {
   throwIfNotType(url, 'string');
   // Replace trailing slash, e.g., site.com/ => site.com
-  const siteUrl = site.url.replace(/\/$/, '');
+  const siteUrl = env.url.replace(/\/$/, '');
   // Replace starting slash, e.g., /path/ => path/
   const relativeUrl = url.replace(/^\//, '');
 
