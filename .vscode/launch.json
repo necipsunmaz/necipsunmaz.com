@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Start Site",
+      "cwd": "${workspaceFolder}",
+      "request": "launch",
+      "type": "node-terminal",
+      "command": "npm run serve"
+    }
+  ]
+}
