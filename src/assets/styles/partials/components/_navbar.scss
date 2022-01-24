@@ -10,6 +10,7 @@
   background-color: var(--navbar-bg-color);
   box-shadow: var(--navbar-box-shadow);
   min-height: var(--navbar-height);
+  transition-duration: 0.3s;
   @include z-index(navbar);
 
   &-navbar {

@@ -23,6 +23,7 @@ body {
   --padding-y: #{clamped(32px, 96px)};
   padding-top: var(--padding-y);
   padding-bottom: var(--padding-y);
+  transition-duration: 0.3s;
 }
 
 strong {
