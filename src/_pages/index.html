@@ -31,7 +31,7 @@ permalink: /
   "@type": "Person",
   "image": "{{ '/assets/images/profile-photo-400.jpeg' | toAbsoluteUrl }}",
   "jobTitle": "Software Developer",
-  "name": "{{ site.author }}",
+  "name": "{{ env.author }}",
   "sameAs": [
     {%- for network in networks %}
       "{{ network[1].url }}"{%- if forloop.last == false -%},{%- endif -%}
