@@ -1,0 +1,8 @@
+{%- assign datetimeFormat = datetimeFormat | default: "%d.%m.%Y" -%}
+{%- assign dateFormat = dateFormat | default: "%d.%m.%Y" -%}
+{%- assign readable = readable | default: false -%}
+{% if readable %}
+<time datetime="{{ date | toLocaleDateReadableString }}" {% if class %}class="{{ class }}"{% endif %}>{{ date | toLocaleDateReadableString }}</time>
+{% else %}
+<time datetime="{{ date | date: datetimeFormat }}" {% if class %}class="{{ class }}"{% endif %}>{{ date | date: dateFormat }}</time>
+{% endif %}

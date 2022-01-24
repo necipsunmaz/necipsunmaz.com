@@ -1,0 +1,24 @@
+@import '../mixins';
+
+figure {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 0.8rem;
+}
+
+figcaption {
+  max-width: 70ch;
+  margin: 0 auto;
+  @include font($family: 'title', $weight: 'regular');
+}
+
+figcaption,
+cite {
+  text-align: center;
+  @include font($size: 'sm');
+
+  &,
+  a {
+    color: var(--color-text-soft);
+  }
+}

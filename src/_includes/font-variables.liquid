@@ -1,0 +1,20 @@
+{%- assign allFonts = fonts | entries -%}
+html {
+  {%- for font in allFonts -%}
+    {%- assign fontType = font | first -%}
+    {%- assign fontConfig = font | last -%}
+    {%- assign fallbackFonts = fontConfig.fallbacks | join: ", " -%}
+    --font-family-{{ fontType }}: {{ fontConfig.family }}, {{ fallbackFonts }};
+    {%- assign weights = fontConfig.weights | entries -%}
+    {%- for weight in weights -%}
+      {%- assign weightName = weight | first -%}
+      {%- assign weightConfig = weight | last -%}
+      {%- if weightConfig.style != 'italic' -%}
+        --font-weight-{{ fontType }}-{{ weightName }}: {{ weightConfig.weight }};
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  --font-family-body: arial, sans-serif;
+  --font-weight-body-regular: 400;
+  --font-weight-body-bold: 700;
+}

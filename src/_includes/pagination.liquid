@@ -1,0 +1,16 @@
+<nav>
+  <ol class="pagination-trail pill-group font-sm" aria-label="Sayfalar">
+    {%- for href in hrefs -%}
+      <li>
+        <a
+          href="{{ href }}"
+          class="pill circle pagination-page"
+          aria-label="Sayfa {{ forloop.index }}"
+          {% if href == page.url %}aria-current="page"{% endif %}
+        >
+          {{- forloop.index -}}
+        </a>
+      </li>
+    {%- endfor -%}
+  </ol>
+</nav>

@@ -1,0 +1,28 @@
+<footer class="footer">
+  <div class="footer-container centered">
+    <div class="footer-info">
+      <h2 class="footer-title font-xl">Okuduğun için teşekkürler!</h2>
+      <div class="footer-subtitle">Gitmeden diğer linklere de bir göz atmak isteyebilirsin.</div>
+      <div class="footer-copyright font-sm"><span aria-hidden="true">{{ 'now' | date: "%Y" }}  &copy;</span> Copyright {{ site.author }}</div>
+    </div>
+    <nav class="footer-links" aria-label="Secondary">
+      <ul class="footer-pages" aria-label="Quick links">
+        <li><a href="/iletisim/" class="footer-link">İletişim</a></li>
+        <li><a href="/feed.xml" class="footer-link">RSS</a></li>
+        <li><a href="/sitemap.xml" class="footer-link">Sitemap</a></li>
+      </ul>
+      <ul class="footer-socials" aria-label="Social media">
+        {%- assign networks = socials | entries -%}
+        {%- for network in networks -%}
+          {%- assign id = network | first -%}
+          {%- assign data = network | last -%}
+          <li>
+            <a href="{{ data.url }}" target="_blank" rel="noreferrer noopener" class="footer-link">
+              {% socialIcon id %}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+  </div>
+</footer>

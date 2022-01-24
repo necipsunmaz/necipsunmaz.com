@@ -1,0 +1,15 @@
+@import '../mixins';
+
+.pagination {
+  &-trail {
+    gap: 0.8rem;
+    margin-top: 3.2rem;
+    justify-content: flex-end;
+  }
+
+  &-page {
+    min-width: 3.2rem;
+    justify-content: center;
+    font-weight: var(--font-weight-code-medium);
+  }
+}

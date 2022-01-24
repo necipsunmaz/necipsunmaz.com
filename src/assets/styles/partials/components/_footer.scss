@@ -1,0 +1,74 @@
+@import '../mixins';
+
+.footer {
+  background-color: var(--footer-bg-color);
+  color: var(--navbar-text-color);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    justify-content: space-between;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+
+  &-title {
+    color: white;
+    margin-bottom: 0.8rem;
+  }
+
+  &-subtitle {
+    margin-bottom: 0.8rem;
+  }
+
+  &-copyright {
+    color: hsl(0deg 0% 70%);
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  &-pages,
+  &-socials {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  &-socials svg {
+    aspect-ratio: 1;
+    width: 2.4rem;
+    fill: currentColor;
+  }
+
+  &-link {
+    color: var(--navbar-text-color);
+    display: flex;
+    @include focus-outline($offset: 0.4rem);
+    @include underlined-link($initially-underlined: false);
+  }
+  @include tablet {
+    & {
+      text-align: start;
+    }
+
+    &-container {
+      flex-direction: row;
+      gap: 1.6rem;
+    }
+
+    &-links {
+      justify-content: center;
+      align-items: flex-end;
+    }
+  }
+}

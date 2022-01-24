@@ -1,0 +1,41 @@
+---
+layout: default
+isBlogPage: true
+eleventyComputed:
+preloads:
+-
+    as: font
+    type: font/woff2
+    href: "{{ fonts.code.weights.regular.url }}"
+    crossorigin: true
+---
+
+<article class="blog">
+  {%- assign pageCategory = category.title | default: 'all' -%}
+  <header>
+    <h1 class="blog-title">{%- if pageCategory == 'all' -%}Tüm Blog Yazılarım{%- else -%}{{ pageCategory }}
+      kategorisinde ki tüm yazılarım.{%- endif -%}</h1>
+    <p class="blog-description font-md">
+      Popüler kategorilerde ki yazılarımı filtreleyerek bakabilir veya <a class="underlined-link"
+        href="/kategoriler/">tüm kategorilere buradan ulaşabilirsin.</a>.
+    </p>
+    <nav aria-label="Popular tags" class="blog-nav">
+      <a class="screen-reader-only skip-popular-tags" href="#skip-popular-tags">Yazılara geç</a>
+      <ol class="pill-group blog-tags">
+        {%- assign popularCategories = collections.popularCategories -%}
+        {%- for category in popularCategories %}
+        <li>
+          <a href="{{ category.href }}" class="pill" data-shape="round" data-size="sm" {% if
+            pageCategory==category.title -%} aria-current="page" {%- endif -%}>
+            {{ category.title }}&nbsp;<span class="pill-count" aria-label="{{ category.count }} posts">
+              {{ category.count}}
+            </span>
+          </a>
+        </li>
+        {% endfor %}
+      </ol>
+      <div id="skip-popular-tags"></div>
+    </nav>
+  </header>
+  {{ content }}
+</article>

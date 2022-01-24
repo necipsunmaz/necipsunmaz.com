@@ -1,0 +1,18 @@
+{%- capture props -%}
+  {
+    "src": "{{ src }}"
+    {%- if alt -%},"alt": "{{ alt }}"{%- endif -%}
+    {%- if baseFormat -%},"baseFormat": "{{ baseFormat }}"{%- endif -%}
+    {%- if optimizedFormats -%},"optimizedFormats": {{ optimizedFormats }}{%- endif -%}
+    {%- if widths -%},"widths": {{ widths }}{%- endif -%}
+    {%- if sizes -%},"sizes": "{{ sizes }}"{%- endif -%}
+    {%- if clickable != nil -%},"clickable": {{ clickable }}{%- endif -%}
+    {%- if className -%},"className": "{{ className }}"{%- endif -%}
+    {%- if fileName -%},"fileName": "{{ fileName }}"{%- endif -%}
+    {%- if urlPath -%},"urlPath": "{{ urlPath }}"{%- endif -%}
+    {%- if imgClass -%},"imgClass": "{{ imgClass }}"{%- endif -%}
+    {%- if lazy != nil -%},"lazy": {{ lazy }}{%- endif -%}
+  }
+{%- endcapture -%}
+{%- assign props = props | fromJson -%}
+{%- image props -%}

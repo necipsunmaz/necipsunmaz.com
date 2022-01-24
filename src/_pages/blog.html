@@ -1,0 +1,17 @@
+---
+layout: blog
+permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
+pagination:
+  data: collections.posts
+  size: 20
+  alias: posts
+eleventyComputed:
+  title: "Blog{% if pagination.pageNumber > 0 %} (Sayfa {{ pagination.pageNumber | plus: 1 }}){% endif %}"
+---
+
+
+{% include post-previews.liquid posts: posts, titleLevel: 2 %}
+{%- assign numPages = pagination.hrefs | size -%}
+{%- if numPages > 1 -%}
+  {%- include pagination.liquid hrefs: pagination.hrefs -%}
+{%- endif -%}

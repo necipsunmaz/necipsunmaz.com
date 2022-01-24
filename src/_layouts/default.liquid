@@ -1,0 +1,100 @@
+---
+stylesheets:
+  - /assets/styles/main.css
+eleventyComputed:
+  preloads:
+    -
+      as: style
+      type: text/css
+      href: /assets/styles/main.css
+---
+{%- if page.url == "/" -%}
+  {%- assign pageTitle = site.title -%}
+{%- else -%}
+  {%- assign pageTitle = title | default: renderData.title -%}
+  {%- assign pipe = " | " -%}
+  {%- assign pageTitle = pageTitle | append: pipe | append: site.title -%}
+{%- endif -%}
+{%- assign description = description | default: site.description -%}
+{%- assign keywords = keywords | default: site.keywords -%}
+{%- assign defaultCanonicalUrl = page.url | toAbsoluteUrl -%}
+{%- assign canonicalUrl = canonicalUrl | default: defaultCanonicalUrl -%}
+
+<!DOCTYPE html>
+<html lang="tr-TR" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ description }}">
+  <meta name="keywords" content="{{ keywords | join: ', ' }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="{{ site.author }}">
+  <link rel="canonical" href="{{ canonicalUrl }}">
+  {%- if noindex -%}
+    <meta name="robots" content="noindex">
+  {%- endif -%}
+  {%- capture fontCss -%}
+    {%- include font-face.liquid -%}
+    {%- include font-variables.liquid -%}
+    body {
+      font-family: var(--font-family-main);
+    }
+    code {
+      font-family: var(--font-family-code);
+    }
+  {%- endcapture -%}
+  <style>{{ fontCss | compileAndMinifyScss }}</style>
+  {%- for href in stylesheets -%}
+    <link rel="stylesheet" href="{{ href }}">
+  {%- endfor -%}
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.dataset.theme = savedTheme;
+      } else {
+        const userPrefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const preferredTheme = userPrefersDarkMode ? 'dark' : 'light';
+        document.documentElement.dataset.theme = preferredTheme;
+        localStorage.setItem('theme', preferredTheme);
+      }
+    })();
+  </script>
+  <script type="module" src="/assets/scripts/index.mjs"></script>
+  <meta property="og:title" content="{{ pageTitle }}">
+  {%- if ogImage -%}
+    <meta property="og:image" content="{{ ogImage }}">
+  {%- endif -%}
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ page.url | toAbsoluteUrl }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@necipsunmaz">
+  <meta name="twitter:title" content="{{ pageTitle }}">
+  <meta name="twitter:description" content="{{ description }}">
+  {%- if ogImage -%}
+    <meta name="twitter:image" content="{{ ogImage }}">
+  {%- endif -%}
+  {%- if preloads -%}
+    {% for preload in preloads %}
+      <link rel="preload" as="{{ preload.as }}" type="{{ preload.type }}" href="{{ preload.href }}" {% if preload.crossorigin %}crossorigin{% endif %}>
+    {%- endfor -%}
+  {% endif %}
+  <link rel="modulepreload" as="script" type="text/javascript" href="/assets/scripts/index.mjs">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for necipsunmaz.com" href="/feed.xml" />
+  <noscript><style>#theme-toggle,.youtube-embed{display:none;}</style></noscript>
+</head>
+<body>
+  {%- include navbar.liquid -%}
+  <main class="content centered">
+    {{ content }}
+  </main>
+  {%- include footer.liquid -%}
+</body>
+</html>

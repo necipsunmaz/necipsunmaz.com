@@ -1,0 +1,52 @@
+@use 'sass:math';
+@use 'sass:string';
+@use 'sass:map';
+
+@import './breakpoints';
+@import './zIndex';
+
+@function to-rems($value) {
+  // Check if the value, as a string, is already expressed in rems
+  @if ends-with('' + $value, 'rem') {
+    @return $value;
+  }
+
+  $value-rems: math.div($value, 10px) * 1rem;
+  @return $value-rems;
+}
+
+/// Returns true if the given string ends with the given suffix.
+/// Adapted for use from: https://stackoverflow.com/a/40389473/5323344
+
+@function ends-with($string, $suffix) {
+  $string-length: string.length($string);
+  $suffix-length: string.length($suffix);
+  @return str-slice($string, ($string-length - $suffix-length + 1)) == $suffix;
+}
+
+@function z-index($key) {
+  @return map.get($z-index, $key);
+}
+
+@function rnd($number, $places: 0) {
+  $n: 1;
+  @if $places > 0 {
+    @for $i from 1 through $places {
+      $n: $n * 10;
+    }
+  }
+  @return math.div(math.round($number * $n), $n);
+}
+
+$default-min-bp: map.get($media-breakpoints, 'mobile');
+$default-max-bp: map.get($media-breakpoints, 'desktop');
+
+/// Returns a CSS clamp(...) declaration, with the responsive argument computed automatically.
+@function clamped($min-px, $max-px, $min-bp: $default-min-bp, $max-bp: $default-max-bp) {
+  $slope: math.div($max-px - $min-px, $max-bp - $min-bp);
+  $slope-vw: rnd($slope * 100, 2);
+  $intercept-rems: rnd(to-rems($min-px - $slope * $min-bp), 2);
+  $min-rems: rnd(to-rems($min-px), 2);
+  $max-rems: rnd(to-rems($max-px), 2);
+  @return clamp(#{$min-rems}, #{$slope-vw}vw + #{$intercept-rems}, #{$max-rems});
+}

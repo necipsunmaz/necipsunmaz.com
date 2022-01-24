@@ -1,0 +1,28 @@
+---
+title: İletişim
+description: Soru ve önerilerin için bana yazabilirsin.
+layout: contact
+permalink: /iletisim/
+---
+
+<div>
+  <h1 class="contact-title font-xl">Bana Yaz!  <span class="emoji" aria-hidden="true">✉️</span></h1>
+  <p class="contact-subtitle">Yıldız ile işaretlenmiş alanların doldurulması zorunludur.</p>
+  <form class="contact-form" method="POST" action="/iletisim/tesekkurler/" spellcheck="false" name="contact" netlify
+    netlify-honeypot="_gotcha">
+    <label for="email required">
+      <span class="label-title">Email *</span>
+      <input class="input" type="email" name="_replyto" id="email" required />
+    </label>
+    <label class="required">
+      <span class="label-title">Konu *</span>
+      <input class="input" type="text" name="subject" id="subject" required />
+    </label>
+    <label class="required" for="message">
+      <span class="label-title">Mesaj *</span>
+      <textarea class="input" name="body" id="message" required></textarea>
+    </label>
+    <button type="submit" class="button">Gönder</button>
+    <input aria-hidden="true" type="text" name="_gotcha" class="honeypot" />
+  </form>
+</div>

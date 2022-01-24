@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  @media (prefers-reduced-motion) {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+label,
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+img,
+video {
+  height: auto;
+}
+
+img,
+iframe,
+video,
+table {
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  overflow-x: auto;
+  display: block;
+}

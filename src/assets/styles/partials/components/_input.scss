@@ -1,0 +1,35 @@
+@import '../mixins';
+
+.input {
+  background-color: var(--input-bg-color);
+  border: solid 0.1rem var(--color-border);
+  border-radius: 0.2rem;
+  color: var(--color-text-emphasis);
+  padding: 0.2rem 0.8rem;
+
+  &:focus {
+    outline: solid 0.2rem var(--color-border-focus);
+    border-color: var(--color-border-focus);
+  }
+}
+
+label {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.4rem;
+  align-items: center;
+  color: var(--color-text-emphasis);
+  @include font($family: 'title', $weight: 'bold');
+
+  &[data-flow='horizontal'] {
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+  }
+
+  &.required .label-title::after {
+    content: '*';
+    margin: 0 0.4rem;
+    vertical-align: middle;
+  }
+}

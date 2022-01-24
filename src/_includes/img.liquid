@@ -1,0 +1,9 @@
+{%- assign imageSrc = '/assets/images/posts/' | append: page.fileSlug | append: '/' | append: src -%}
+{% if caption %}<figure>{% else %}<p>{% endif %}
+{%- include image.liquid src: imageSrc, alt: alt, baseFormat: baseFormat, formats: formats, widths: widths, sizes: sizes, className: className, clickable: clickable -%}
+{% if caption %}
+    <figcaption {% if isCaptionAriaHidden %}aria-hidden="true"{% endif %}>{{ caption | toHtml }}</figcaption>
+  </figure>
+{% else %}
+  </p>
+{% endif %}

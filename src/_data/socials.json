@@ -1,0 +1,30 @@
+{
+  "linkedin": {
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com/in/necipsunmaz/"
+  },
+  "github": {
+    "name": "GitHub",
+    "url": "https://github.com/necipsunmaz/"
+  },
+  "twitter": {
+    "name": "Twitter",
+    "url": "https://twitter.com/necipsunmaz/"
+  },
+  "facebook": {
+    "name": "Facebook",
+    "url": "https://www.facebook.com/necipsunmaz/"
+  },
+  "instagram": {
+    "name": "Instagram",
+    "url": "https://www.instagram.com/necipsunmaz/"
+  },
+  "stackoverflow": {
+    "name": "Stack Overflow",
+    "url": "https://stackoverflow.com/users/6670104/necip-sunmaz"
+  },
+  "buymeacoffee": {
+    "name": "Buy Me a Coffee",
+    "url": "https://www.buymeacoffee.com/necipsunmaz"
+  }
+}

@@ -1,0 +1,41 @@
+---
+permalink: /
+---
+
+<article id="home-page">
+  <section class="hero-banner">
+    <h1 class="hero-banner-title">👋 Selam, Ben Necip.</h1>
+    <p class="hero-banner-subtitle font-lg">
+      Yazılım geliştiricisi ve blog yazarıyım. Yeni şeyler öğrenmeyi ve diğer insanlar ile paylaşmayı seviyorum.
+      Yazılarıma
+      <a class="underlined-link" href="/blog/">buradan</a> ulaşabilir,
+      <a class="underlined-link" href="/iletisim/">önerilerde bulunabilir</a> veya
+      <a class="underlined-link" href="/hakkimda/">hakkımda kısmına göz atabilirsin</a>.
+    </p>
+  </section>
+  <section class="section">
+    <h2 id="recent-posts" class="banner-heading">ÖNERİLEN YAZILAR</h2>
+    {%- assign recentPosts = collections.posts | limit: 5 -%}
+    {%- include post-previews.liquid posts: recentPosts, titleLevel: 3 -%}
+  </section>
+  <section class="section">
+    <h2 id="featured-posts" class="banner-heading">ÖNE ÇIKAN YAZILAR</h2>
+    {%- assign featuredPosts = collections.posts | where: "data.isFeatured", true -%}
+    {%- include post-previews.liquid posts: featuredPosts, titleLevel: 3 -%}
+  </section>
+</article>
+{%- assign networks = socials | entries -%}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "image": "{{ '/assets/images/profile-photo-400.jpeg' | toAbsoluteUrl }}",
+  "jobTitle": "Software Developer",
+  "name": "{{ site.author }}",
+  "sameAs": [
+    {%- for network in networks %}
+      "{{ network[1].url }}"{%- if forloop.last == false -%},{%- endif -%}
+    {% endfor %}
+  ]
+}
+</script>

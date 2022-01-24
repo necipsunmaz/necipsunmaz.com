@@ -1,0 +1,148 @@
+@use 'sass:math';
+@use 'sass:string';
+@use 'sass:map';
+@use 'sass:list';
+
+@import './functions';
+@import './breakpoints';
+
+@mixin centered {
+  --padding: min(4vw, 2.4rem);
+  max-width: calc(var(--page-max-width) + 2 * var(--padding));
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+
+@mixin transition($props...) {
+  $result: ();
+  @for $i from 1 through length($props) {
+    $prop: list.nth($props, $i);
+    $result: list.append($result, $prop);
+    @if $i != length($props) {
+      $result: list.append(
+        $result,
+        string.unquote(
+          $string: ',',
+        )
+      );
+    }
+  }
+  transition-timing-function: var(--transition-timing-function);
+  transition-duration: var(--transition-duration);
+  transition-property: $result;
+}
+
+@mixin headings {
+  :is(h1, h2, h3, h4, h5, h6) {
+    @content;
+  }
+}
+
+@mixin z-index($key) {
+  z-index: z-index($key);
+}
+
+@mixin font($family: null, $weight: null, $style: null, $size: null) {
+  @if $family {
+    font-family: var(--font-family-#{$family});
+  }
+  @if $family and $weight {
+    font-weight: var(--font-weight-#{$family}-#{$weight});
+  }
+  @if $style {
+    font-style: string.unquote($style);
+  }
+  @if $size {
+    --line-height: calc(2ex + 1.1rem);
+    font-size: var(--font-size-#{$size});
+    line-height: var(--line-height);
+  }
+}
+
+@mixin underlined-link($initially-underlined: true) {
+  @if $initially-underlined {
+    text-decoration: underline;
+
+    &:is(:hover, :focus-visible) {
+      text-decoration: none;
+    }
+  } @else {
+    text-decoration: none;
+
+    &:is(:hover, :focus-visible) {
+      text-decoration: underline;
+    }
+  }
+}
+
+@mixin focus-outline($color: currentColor, $style: solid, $thickness: 0.2rem, $offset: 0) {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: $style $thickness $color;
+    outline-offset: $offset;
+  }
+}
+
+@mixin rhythm() {
+  > * + * {
+    margin-top: var(--line-height);
+  }
+}
+
+@mixin line-clamp($num-lines) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $num-lines;
+}
+
+// Breakpoint mixins
+
+@mixin mobile {
+  $bp: map.get($media-breakpoints, mobile);
+  @media screen and (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin mobile-lg {
+  $bp: map.get($media-breakpoints, mobile-lg);
+  @media screen and (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin tablet-sm {
+  $bp: map.get($media-breakpoints, tablet-sm);
+  @media screen and (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  $bp: map.get($media-breakpoints, tablet);
+  @media screen and (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  $bp: map.get($media-breakpoints, desktop);
+  @media screen and (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  $bp: map.get($media-breakpoints, desktop-lg);
+  @media screen and (min-width: $bp) {
+    @content;
+  }
+}

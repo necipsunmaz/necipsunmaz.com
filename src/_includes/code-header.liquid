@@ -1,0 +1,9 @@
+{%- assign filename = file -%}
+<div class="code-header{% unless copyable == false %} with-copy-button{% endunless %}{% if filename %} with-file-name{% endif %}">
+  {%- if filename -%}
+    <div class="code-file-name">{{ filename }}</div>
+  {%- endif -%}
+  {%- unless copyable == false -%}
+    <button class="copy-code-button font-sm" aria-label="Kodu kopyala" type="button"></button>
+  {%- endunless -%}
+</div>

@@ -1,0 +1,5 @@
+<ol class="post-preview-grid">
+  {%- for post in posts -%}
+    {% include post-preview.liquid post: post, titleLevel: titleLevel %}
+  {%- endfor -%}
+</ol>

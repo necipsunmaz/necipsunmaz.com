@@ -1,0 +1,55 @@
+<header class="header">
+  <div class="header-navbar font-sm" aria-label="Primary">
+    <button id="hamburger-menu" class="header-navbar-button"></button>
+    <a class="header-navbar-branding" href="/" aria-label="Home page" {% if permalink=="/" %}aria-current="page" {%
+      endif %}>
+      <img width="38" src="/assets/images/logo.svg" alt="Necip Sunmaz kişisel blog logosu."
+        srcset="/assets/images/logo.svg">
+      <span class="header-navbar-site-name">Necip Sunmaz</span>
+    </a>
+    <div class="header-navbar-menu">
+      <nav class="header-navbar-links">
+        <a class="header-navbar-link home" href="/" {% if permalink=="/" %}aria-current="page" {% endif %}>Anasayfa</a>
+        {%- assign navLinks="Hakkımda-hakkimda,Blog-blog,İletişim-iletisim" | split: ',' -%}
+        {%- for link in navLinks -%}
+        {%- assign href = link | split: '-' -%}
+        <a class="header-navbar-link" href="/{{ href.last }}/" {% if permalink==href.last -%} aria-current="page" {%-
+          endif -%} {% if href=='Blog' and isBlogPage -%} aria-current="page" {%- endif -%}>
+          {{- href.first -}}
+        </a>
+        {%- endfor -%}
+      </nav>
+      <button id="theme-toggle" class="toggle" aria-label="Toggle theme" type="button">
+        <span class="toggle-sun-icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+            focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+            style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+            class="toggle-sun-icon" data-icon="feather-sun" data-inline="false">
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <path d="M12 1v2"></path>
+              <path d="M12 21v2"></path>
+              <path d="M4.22 4.22l1.42 1.42"></path>
+              <path d="M18.36 18.36l1.42 1.42"></path>
+              <path d="M1 12h2"></path>
+              <path d="M21 12h2"></path>
+              <path d="M4.22 19.78l1.42-1.42"></path>
+              <path d="M18.36 5.64l1.42-1.42"></path>
+            </g>
+          </svg>
+        </span>
+        <span class="toggle-button"></span>
+        <span class="toggle-moon-icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+            focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+            style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+            class="toggle-moon-icon" data-icon="feather-moon" data-inline="false">
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79z"></path>
+            </g>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</header>

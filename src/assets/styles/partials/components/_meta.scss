@@ -1,0 +1,32 @@
+@import '../mixins';
+
+.post-meta {
+  &-date {
+    color: var(--color-text-emphasis);
+  }
+
+  &-tag {
+    color: var(--color-text-tag);
+    display: flex;
+
+    &::before {
+      content: '#';
+      user-select: none;
+    }
+
+    &::after {
+      user-select: none;
+      content: ',';
+    }
+  }
+
+  &-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+
+    li:last-of-type .post-meta-tag::after {
+      content: none;
+    }
+  }
+}

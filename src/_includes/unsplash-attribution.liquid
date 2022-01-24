@@ -1,0 +1,14 @@
+{% assign params = "?utm_source=" | append: site.url | append: "&utm_medium=referral" %}
+## Atıflar
+Yazıda kullanılan görseller; <br />
+{%- assign attribution=attributions | split: ',' -%}
+<ul class="list">
+    {%- for user in attribution -%}
+    {%- assign userDetail = user | split: '-' -%}
+    <li>
+        [{{ userDetail[0] }}](https://unsplash.com/@{{ userDetail[1] }}{{ params }})
+        ([Unsplash](https://unsplash.com/photos/{{ userDetail[2] }}{{ params }})) <br />
+    </li>
+    {%- endfor -%}
+</ul>
+taraflarınca oluşturulmuştur.

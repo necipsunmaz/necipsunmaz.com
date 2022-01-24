@@ -1,0 +1,95 @@
+@import "../mixins";
+
+.contact {
+  height: 100%;
+
+  &-content {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    grid-auto-flow: row;
+    gap: 4.8rem;
+    @include tablet {
+      grid-auto-flow: column;
+      gap: 9.6rem;
+      grid-template-columns: 3fr 2fr;
+    }
+  }
+
+  &-title {
+    margin-bottom: 0.8rem;
+  }
+
+  &-subtitle {
+    margin-bottom: 2.4rem;
+
+    .submitted & {
+      margin: 0;
+    }
+  }
+
+  &-form {
+    display: grid;
+    gap: 1.6rem;
+    background-color: var(--form-bg-color);
+    border-radius: 0.2rem;
+    border: solid 1px hsl(0deg 0% 0% / 8%);
+    padding: clamped(12px, 24px);
+
+    textarea {
+      min-height: 17.5rem;
+    }
+  }
+
+  button[type="submit"] {
+    border-radius: 0.2rem;
+    height: 4.8rem;
+    @include focus-outline($color: var(--button-bg-color-focus), $offset: 0.2rem);
+  }
+
+  &-socials {
+    display: grid;
+    gap: 1.6rem;
+    grid-template-rows: min-content auto;
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamped(8px, 16px);
+    }
+  }
+
+  &-social {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: clamped(8px, 16px);
+    padding: clamped(8px, 16px);
+    white-space: nowrap;
+    min-width: fit-content;
+    justify-content: center;
+    border-radius: 0.2rem;
+    color: var(--color-text-normal);
+
+    svg {
+      justify-self: center;
+      width: clamped(24px, 32px);
+      height: clamped(24px, 32px);
+      fill: currentColor;
+    }
+
+    &:is(:focus, :hover) {
+      background-color: var(--hover-bg-color);
+      cursor: pointer;
+      color: var(--color-text-emphasis);
+    }
+
+    &-name {
+      @include font($family: "body", $weight: "regular");
+    }
+  }
+}
+
+// Detect spam (Netlify honeypot field)
+input.honeypot {
+  display: none;
+}

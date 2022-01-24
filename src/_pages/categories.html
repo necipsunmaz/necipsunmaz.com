@@ -1,0 +1,17 @@
+---
+layout: blog
+pagination:
+  data: collections.postsByCategory
+  size: 1
+  alias: category
+permalink: "{{ category.href }}"
+noindex: true
+excludeFromSitemap: true
+eleventyComputed:
+  title: "{{ category.title }} kategorisinde ki tüm yazılar {% if category.pageNumber > 0 %} (Sayfa {{ category.pageNumber | plus: 1 }}){% endif %}"
+---
+
+{% include post-previews.liquid posts: category.posts, titleLevel: 2 %}
+{%- if category.totalPages > 1 -%}
+  {%- include pagination.liquid hrefs: category.hrefs.all -%}
+{%- endif -%}

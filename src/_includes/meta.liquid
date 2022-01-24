@@ -1,0 +1,29 @@
+{%- assign numWords = content | stripHtml | wordCount -%}
+{%- assign wordsPerMinute = 200.0 -%}
+{%- assign readingLengthMinutes = numWords | dividedBy: wordsPerMinute | ceil -%}
+<div class="post-meta">
+  {% if showProfilePhoto %}
+    <div class="post-meta-item">
+      {%- include image.liquid src: "/assets/images/author-photo.jpg", className: "author-photo", clickable: false, widths: "[44, 88]" -%}
+    </div>
+  {%- endif -%}
+  <div class="post-meta-item">
+    {%- include icon.liquid icon: "calendar", className: "post-meta-icon" -%}
+    {%- include date.liquid date: post.date -%}
+  </div>
+  <div class="post-meta-item">
+    {%- include icon.liquid icon: "clock" className: "post-meta-icon" -%}
+    <span>{{ readingLengthMinutes }} min read</span>
+  </div>
+  {%- if categories -%}
+    <ul class="post-meta-item pill-group post-meta-tags" aria-label="Categories">
+      {%- for category in categories -%}
+        <li>
+          <a href="/kategoriler/{{ category }}/" class="pill post-tag">
+            {{- category -}}
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</div>
