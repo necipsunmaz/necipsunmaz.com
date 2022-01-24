@@ -10,12 +10,11 @@
     <div class="header-navbar-menu">
       <nav class="header-navbar-links">
         <a class="header-navbar-link home" href="/" {% if permalink=="/" %}aria-current="page" {% endif %}>Anasayfa</a>
-        {%- assign navLinks="Hakkımda-hakkimda,Blog-blog,İletişim-iletisim" | split: ',' -%}
+        {%- assign navLinks="Hakkımda,Blog,İletişim" | split: ',' -%}
         {%- for link in navLinks -%}
-        {%- assign href = link | split: '-' -%}
-        <a class="header-navbar-link" href="/{{ href.last }}/" {% if permalink==href.last -%} aria-current="page" {%-
-          endif -%} {% if href=='Blog' and isBlogPage -%} aria-current="page" {%- endif -%}>
-          {{- href.first -}}
+        <a class="header-navbar-link" href="/{{ link | slugify }}/" {% if permalink==link -%} aria-current="page" {%-
+          endif -%} {% if link=='blog' and isBlogPage -%} aria-current="page" {%- endif -%}>
+          {{- link -}}
         </a>
         {%- endfor -%}
       </nav>

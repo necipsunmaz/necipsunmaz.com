@@ -1,5 +1,3 @@
-const slugify = require('slugify');
-
 /**
  * Returns an array of all unique values from the given collection under the specified key.
  * Credit: https://www.webstoemp.com/blog/basic-custom-taxonomies-with-eleventy/.
@@ -20,12 +18,25 @@ const getAllUniqueKeyValues = (collectionItems, key) => {
 };
 
 /** Converts the given string to a slug form. */
-const slugifyString = (str) => {
-  return slugify(str, {
-    replacement: '-',
-    remove: /[#,&,+()$~%.'":*?<>{}]/g,
-    lower: true,
-  });
+const slugifyString = (value) => {
+  return value
+    .toLowerCase()
+    .trim()
+    .replace(/(i̇)/g, 'i')
+    .replace(/([ğ])/g, 'g')
+    .replace(/([Ğ])/g, 'g')
+    .replace(/([ş])/g, 's')
+    .replace(/([Ş])/g, 's')
+    .replace(/([ü])/g, 'u')
+    .replace(/([Ü])/g, 'u')
+    .replace(/([ç])/g, 'c')
+    .replace(/([Ç])/g, 'c')
+    .replace(/([ı])/g, 'i')
+    .replace(/([İ])/g, 'i')
+    .replace(/([ö])/g, 'o')
+    .replace(/([Ö])/g, 'o')
+    .replace(/([\s._~:/?#@!$&'"`()*+,;=<>%{}|\^\[\]'™'\\])/g, '-')
+    .replace(/([-])\1+/g, '-');
 };
 
 /** Helper to throw an error if the provided argument is not of the expected. */
