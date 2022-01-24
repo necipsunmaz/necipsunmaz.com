@@ -25,7 +25,7 @@ module.exports = {
     repo: `necipsunmaz.com`,
   },
   tracking: {
-    gtag: 'UA-78953506-1',
+    gtag: 'G-XDB0GXV5PD',
   },
   pagination: {
     itemsPerPage: 20,

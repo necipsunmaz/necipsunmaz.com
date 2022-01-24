@@ -90,14 +90,14 @@ eleventyComputed:
   <link rel="modulepreload" as="script" type="text/javascript" href="/assets/scripts/index.mjs">
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for necipsunmaz.com" href="/feed.xml" />
   {%- if env.isProd -%}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ env.tracking.gtag }}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', '{{ env.tracking.gtag }}');
-    </script>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id={{ env.tracking.gtag }}"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag() { dataLayer.push(arguments); }
+     gtag('js', new Date()); 
+     gtag('config', '{{ env.tracking.gtag }}');
+   </script>
   {%- endif -%}
   <noscript><style>#theme-toggle,.youtube-embed{display:none;}</style></noscript>
 </head>
