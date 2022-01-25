@@ -7,6 +7,12 @@
     cache_img = './assets/images'
     cache_img_httpHeader = false
 
+[[redirects]]
+  from = "https://necipsunmaz.netlify.app/*"
+  to = "https://necipsunmaz.com/:splat"
+  status = 301
+  force = false
+
 [dev]
   command = "yarn serve"
   targetPort = 4001
