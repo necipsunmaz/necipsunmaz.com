@@ -1,0 +1,15 @@
+---
+permalink: /_redirects
+eleventyExcludeFromCollections: true
+excludeFromSitemap: true
+---
+{%- comment -%}netlify subdomain redirect to main domain.{%- endcomment -%}
+https://necipsunmaz.netlify.app/* https://necipsunmaz.com/:splat 301!
+{%- comment -%}Per-page redirects (e.g., if a page gets indexed but I want to change its URL).{%- endcomment -%}
+{%- for page in collections.all -%}
+  {%- if page.url and page.data.redirectFrom -%}
+    {%- for oldUrl in page.data.redirectFrom %}
+{{ oldUrl }}  {{ page.url }}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
