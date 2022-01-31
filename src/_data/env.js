@@ -19,7 +19,6 @@ module.exports = {
   isProd: false,
   description:
     'Necip Sunmaz kişisel blog sitesidir. Yazılım geliştirme üzerine ve ara sıra konu dışı gönderiler yer alır.',
-  keywords: ['Necip Sunmaz', 'yazılım', 'teknoloji', 'kişisel', 'blog'],
   issues: {
     owner: `necipsunmaz`,
     repo: `necipsunmaz.com`,

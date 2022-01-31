@@ -16,7 +16,6 @@ eleventyComputed:
   {%- assign pageTitle = pageTitle | append: pipe | append: env.title -%}
 {%- endif -%}
 {%- assign description = description | default: env.description -%}
-{%- assign keywords = keywords | default: env.keywords -%}
 {%- assign defaultCanonicalUrl = page.url | toAbsoluteUrl -%}
 {%- assign canonicalUrl = canonicalUrl | default: defaultCanonicalUrl -%}
 
@@ -26,12 +25,15 @@ eleventyComputed:
   <meta charset="utf-8">
   <title>{{ pageTitle }}</title>
   <meta name="description" content="{{ description }}">
-  <meta name="keywords" content="{{ keywords | join: ', ' }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="{{ env.author }}">
+  <meta name="creator" content="{{ env.author }}">
+  <meta name="publisher" content="{{ env.author }}, {{ canonicalUrl }}">
   <link rel="canonical" href="{{ canonicalUrl }}">
   {%- if noindex -%}
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex,nofollow">
+  {%- else -%}
+    <meta name="robots" content="index,follow" />
   {%- endif -%}
   {%- capture fontCss -%}
     {%- include font-face.liquid -%}
