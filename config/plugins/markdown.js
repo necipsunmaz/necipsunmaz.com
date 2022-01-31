@@ -40,7 +40,7 @@ const markdownLib = markdownIt({
     pattern: /^https?:/,
     attrs: {
       target: '_blank',
-      rel: 'noreferrer noopener',
+      rel: 'noreferrer noopener nofollow',
     },
   })
   .use(markdownItKatex, {

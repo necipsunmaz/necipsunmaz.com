@@ -18,7 +18,7 @@ const quote = (children, source, cite) => {
     <div class="quote">${content}</div>
     <div class="quote-source">—<cite><a href="${escape(
       cite
-    )}" target="_blank" rel="noreferrer noopener">${source}</a></cite></div>
+    )}" target="_blank" rel="noreferrer noopener nofollow">${source}</a></cite></div>
   </blockquote>`;
 };
 
