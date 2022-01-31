@@ -28,7 +28,7 @@ eleventyComputed:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="{{ env.author }}">
   <meta name="creator" content="{{ env.author }}">
-  <meta name="publisher" content="{{ env.author }}, {{ canonicalUrl }}">
+  <meta name="publisher" content="{{ env.author }}, {{ env.url }}">
   <link rel="canonical" href="{{ canonicalUrl }}">
   {%- if noindex -%}
     <meta name="robots" content="noindex,nofollow">
