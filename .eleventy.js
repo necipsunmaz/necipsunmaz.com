@@ -5,7 +5,6 @@ const {
   asideShortcode,
   imageShortcode,
   iconShortcode,
-  socialIconShortcode,
   quoteShortcode,
   thumbnailShortcode,
 } = require('./config/shortcodes');
@@ -62,7 +61,6 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPairedShortcode('quote', quoteShortcode);
   eleventyConfig.addShortcode('image', imageShortcode);
   eleventyConfig.addShortcode('icon', iconShortcode);
-  eleventyConfig.addShortcode('socialIcon', socialIconShortcode);
   eleventyConfig.addShortcode('thumbnail', thumbnailShortcode);
 
   // Custom filters

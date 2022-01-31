@@ -45,10 +45,8 @@
     gap: 2.4rem;
   }
 
-  &-socials svg {
-    aspect-ratio: 1;
-    width: 2.4rem;
-    fill: currentColor;
+  &-socials img {
+    filter: invert(1);
   }
 
   &-link {

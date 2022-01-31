@@ -1,4 +1,4 @@
-@import "../mixins";
+@import '../mixins';
 
 .contact {
   height: 100%;
@@ -41,7 +41,7 @@
     }
   }
 
-  button[type="submit"] {
+  button[type='submit'] {
     border-radius: 0.2rem;
     height: 4.8rem;
     @include focus-outline($color: var(--button-bg-color-focus), $offset: 0.2rem);
@@ -70,11 +70,8 @@
     border-radius: 0.2rem;
     color: var(--color-text-normal);
 
-    svg {
-      justify-self: center;
-      width: clamped(24px, 32px);
-      height: clamped(24px, 32px);
-      fill: currentColor;
+    img {
+      filter: var(--image-icon-color);
     }
 
     &:is(:focus, :hover) {
@@ -84,7 +81,7 @@
     }
 
     &-name {
-      @include font($family: "body", $weight: "regular");
+      @include font($family: 'body', $weight: 'regular');
     }
   }
 }

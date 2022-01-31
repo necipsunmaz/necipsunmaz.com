@@ -103,6 +103,10 @@
     color: var(--color-text-normal);
   }
 
+  img {
+    filter: var(--image-icon-color);
+  }
+
   svg {
     width: inherit;
     height: inherit;
