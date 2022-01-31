@@ -14,21 +14,21 @@ Bu başlangıç kılavuzunda, "Blog" kelimesinin kökeni ve tarihçesinden başl
 
 ## Blog Nedir
 
-Etimolojik olarak Blog kelimesinin kökeni (World Wide) Web ve Log kelimelerinin bir araya gelmesiyle weblog (Web Günlüğü-Güncesi) kelimesinden türeyerek oluşmuştur. Fiil olarak blog, blogger ve blog yazarlığı günümüzden 1999 yılına kadar geçmişi bulunmaktadır. Weblog kelimesi kısaltması "blog" olarak 1999 yılında programcı olan Peter Merholz tarafından ortaya atılmıştır. Aynı yıl olan 1999 yılında [Blogger](https://www.blogger.com/) web sitesinin resmi olarak hayatımıza girmesiyle beraber günümüzde sıklıkla kullanılan bir kelime olarak karşımıza çıkmaktadır.
+Etimolojik olarak Blog kelimesinin kökeni (World Wide) Web ve Log kelimelerinin bir araya gelmesiyle weblog (Web Günlüğü-Güncesi) kelimesinden türeyerek oluşmuştur. Fiil olarak blog, blogger ve blog yazarlığı günümüzden 1999 yılına kadar geçmişi bulunmaktadır. Weblog kelimesi kısaltması "blog" olarak 1999 yılında programcı olan Peter Merholz tarafından ortaya atılmıştır. Aynı yıl olan 1999 yılında [Blogger](https://www.blogger.com/ "Blogger") web sitesinin resmi olarak hayatımıza girmesiyle beraber günümüzde sıklıkla kullanılan bir kelime olarak karşımıza çıkmaktadır.
 
-Geçmişte insanların kağıt ve kalemle notlar alarak tutmuş oldukları günlükler yerlerini teknolojinin de getirdiği yenilikleri göz önünde bulundurursak bloglara bırakmıştır. Kendi alanında bir çok uzman ve yazar günlüklerini defterlerde tutmak yerine açmış oldukları bloglarında yayınlamayı tercih etmişlerdir. Günümüzde bir çok kurumsal firmanın bu kervana katıldığını görebiliriz. (bkz. [IBM](https://www.ibm.com/blogs/), [Microsoft](https://blogs.microsoft.com/)) Bu bağlamda bloglar zaman içerisinde sadece kişilerin düşüncelerini paylaştıkları platformlar olmaktan çıkmış kurumsal anlamda marka değerini arttırmak için birer araç haline de dönüşmüştür.
+Geçmişte insanların kağıt ve kalemle notlar alarak tutmuş oldukları günlükler yerlerini teknolojinin de getirdiği yenilikleri göz önünde bulundurursak bloglara bırakmıştır. Kendi alanında bir çok uzman ve yazar günlüklerini defterlerde tutmak yerine açmış oldukları bloglarında yayınlamayı tercih etmişlerdir. Günümüzde bir çok kurumsal firmanın bu kervana katıldığını görebiliriz. (bkz. [IBM](https://www.ibm.com/blogs/ "IBM"), [Microsoft](https://blogs.microsoft.com/ "Microsoft")) Bu bağlamda bloglar zaman içerisinde sadece kişilerin düşüncelerini paylaştıkları platformlar olmaktan çıkmış kurumsal anlamda marka değerini arttırmak için birer araç haline de dönüşmüştür.
 
 ## Blogların Tarihçesi
 
 {% include img.liquid src: "history-of-blog.jpeg", alt: "Blogların tarihçesi nereden başlamıştır? Blog isminin kökeni ve tarihçesi üzerine." %}
 
-Tarihte ki ilk blogun her ne kadar o zamanlar bu sitelere kişisel ana sayfa deniyor olsa da, 1994 yılında Justin Hall tarafından oluşturulan [links.net](http://www.links.net) web sitesi olduğu sanılmaktadır. Weblog terimi 1997 yılına kadar ortaya atılmamasıyla beraber gelişmiş ve 2000'li yılların başında günümüz blog benzerlerinin ilk örneklerine rastlanmıştır.
+Tarihte ki ilk blogun her ne kadar o zamanlar bu sitelere kişisel ana sayfa deniyor olsa da, 1994 yılında Justin Hall tarafından oluşturulan [links.net](http://www.links.net "First blog of world") web sitesi olduğu sanılmaktadır. Weblog terimi 1997 yılına kadar ortaya atılmamasıyla beraber gelişmiş ve 2000'li yılların başında günümüz blog benzerlerinin ilk örneklerine rastlanmıştır.
 
 2006 yılına gelindiğinde ise blog sayısı hızla artmış ve 50 milyon sayısına ulaşmıştır. Blog sayısında yaşanan bu büyük artışa en büyük etkenlerin başında dönemin siyasi ve ünlülerin kişisel bloglarında gündeme dair önemli açıklamalara yer vermesiydi. Güncel konuların bloglarda derinlemesine işlenmesi ve yorumların rahatlıkla bu platformlarda tartışılarak diğer insanlar tarafından eleştirilmesi bu süreçte blogları daha popüler bir hale getirdi.
 
-Blogların yayılmasında ve yayıncı sayısının bu kadar hızlı oranda artmasının kuşkusuz en önemli faktörlerinden bir tanesi de ücretsiz olarak sunulan platformların oluşmasıdır. 2001 yılında 1.0 versiyonu yayınlanan [Movable Type](https://www.movabletype.org/) ve 2003 yılında sunulmuş olan [WordPress](https://wordpress.org/) en popüler blog platformları yer arasındaydı.
+Blogların yayılmasında ve yayıncı sayısının bu kadar hızlı oranda artmasının kuşkusuz en önemli faktörlerinden bir tanesi de ücretsiz olarak sunulan platformların oluşmasıdır. 2001 yılında 1.0 versiyonu yayınlanan [Movable Type](https://www.movabletype.org/ "Movable Type") ve 2003 yılında sunulmuş olan [WordPress](https://wordpress.org/ "WordPress") en popüler blog platformları yer arasındaydı.
 
-Günümüzde bloglar popülerliğini eskisi kadar koruyamamış olasa da burada var olan birikim ve tüketim ihtiyacı zamanla mikrobloglara kaymıştır. Bir çok insan [twitter](https://twitter.com/) ve [tumblr](https://tumblr.com/) gibi platformların birer mikroblog olarak görmektedir. Burada yer alan içeriklerin daha fazla kitlelere ulaşması ve takipçi sayısını arttırmanın kolay olmasından dolayı tercih etmektedir.
+Günümüzde bloglar popülerliğini eskisi kadar koruyamamış olasa da burada var olan birikim ve tüketim ihtiyacı zamanla mikrobloglara kaymıştır. Bir çok insan [twitter](https://twitter.com/ "twitter") ve [tumblr](https://tumblr.com/ "tumblr") gibi platformların birer mikroblog olarak görmektedir. Burada yer alan içeriklerin daha fazla kitlelere ulaşması ve takipçi sayısını arttırmanın kolay olmasından dolayı tercih etmektedir.
 
 ## Blog ve Web Sitesinin Farkı Nedir?
 
@@ -134,6 +134,6 @@ Azim, disiplin ve sıkı çalışma ile iyi bir blog yazarı olabilir, kendini v
 
 ## Ek Kaynaklar
 
-- Biblioklept: [Blog Etimolojik Kökeni](https://biblioklept.org/2018/04/06/blog-about-the-etymology-of-the-word-blog/)
-- Cameron Chapman: [Blog Tarihçesi](https://www.webdesignerdepot.com/2011/03/a-brief-history-of-blogging/)
-- Wikipedia: [Blog Hakkında](https://tr.wikipedia.org/wiki/Blog)
+- Biblioklept: [Blog Etimolojik Kökeni](https://biblioklept.org/2018/04/06/blog-about-the-etymology-of-the-word-blog/ "Blog Etimolojik Kökeni")
+- Cameron Chapman: [Blog Tarihçesi](https://www.webdesignerdepot.com/2011/03/a-brief-history-of-blogging/ "Blog Tarihçesi")
+- Wikipedia: [Blog Hakkında](https://tr.wikipedia.org/wiki/Blog "Blog Hakkında")
