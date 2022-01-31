@@ -49,7 +49,8 @@ Diğer tüm iş geçmişi detaylarına ve bana [Linkedin]({{ socials.linkedin.ur
     <a
       aria-label="Necip Sunmaz's GitHub profile."
       href="https://github.com/necipsunmaz?tab=repositories"
-      >{%- socialIcon "github" -%}</a>
+      ><img height="48" width="48" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/github.svg"
+              alt="github ikonu" loading="lazy"/></a>
   </li>
 </ul>
 

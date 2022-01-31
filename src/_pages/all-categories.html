@@ -23,7 +23,7 @@ eleventyComputed:
   <ol class="pill-group">
     {%- for tag in collections.categoriesWithCount %}
       <li>
-        <a href="{{ tag.href }}" class="pill" data-shape="round" data-size="sm">
+        <a title="{{tag.title}}" href="{{ tag.href }}" class="pill" data-shape="round" data-size="sm">
           {{ tag.title }}&nbsp;<span class="pill-count" aria-label="{{ tag.count }} posts">{{ tag.count }}</span>
         </a>
       </li>

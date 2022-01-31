@@ -27,7 +27,7 @@ eleventyComputed:
     <ul class="post-meta-tags" aria-label="Tags">
       {%- for category in categories -%}
       <li>
-        <a href="/kategoriler/{{ category | slug }}/" class="underlined-link post-meta-tag" aria-label="{{ category | slug }}">
+        <a title="{{category}}" href="/kategoriler/{{ category | slug }}/" class="underlined-link post-meta-tag" aria-label="{{ category | slug }}">
           {{- category -}}
         </a>
       </li>

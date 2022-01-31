@@ -19,7 +19,7 @@
     <ul class="post-meta-item pill-group post-meta-tags" aria-label="Categories">
       {%- for category in categories -%}
         <li>
-          <a href="/kategoriler/{{ category | slug }}/" class="pill post-tag">
+          <a href="/kategoriler/{{ category | slug }}/" class="pill post-tag" title="Kategoriler">
             {{- category -}}
           </a>
         </li>

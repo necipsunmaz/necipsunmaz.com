@@ -1,18 +1,18 @@
 {%- assign titleLevel = titleLevel | default: 3 -%}
 <li>
   <article class="post-preview">
-    <a href="{{ post.url }}" aria-hidden="true" tabindex="-1" class="post-preview-thumbnail-container">
+    <a title="{{post.data.title}}" href="{{ post.url }}" aria-hidden="true" tabindex="-1" class="post-preview-thumbnail-container">
       {%- include thumbnail.liquid post: post -%}
     </a>
     <h{{ titleLevel }} class="post-preview-title font-md">
-      <a class="post-preview-link" href="{{ post.url }}">{{ post.data.title }}</a>
+      <a class="post-preview-link" href="{{ post.url }}" title="{{post.data.title}}">{{ post.data.title }}</a>
     </h{{ titleLevel }}>
     <p class="post-preview-description">{{- post.data.description -}}</p>
     {%- include date.liquid date: post.date class: "post-preview-date post-meta-date" -%}
     <ul class="post-preview-tags post-meta-tags" aria-label="Tags">
       {%- for category in post.data.categories -%}
         <li>
-          <a href="/kategoriler/{{ category | slug }}/" class="underlined-link post-preview-tag post-meta-tag" aria-label="{{ category | slug }}">
+          <a title="{{category}}" href="/kategoriler/{{ category | slug }}/" class="underlined-link post-preview-tag post-meta-tag" aria-label="{{ category | slug }}">
             {{- category -}}
           </a>
         </li>

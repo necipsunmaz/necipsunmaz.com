@@ -14,7 +14,9 @@ noindex: true
 {% assign steps = "xs,sm,base,md,lg,xl,xxl,xxxl" | split: "," %}
 
 {%- for family in families %}
+
 ### {{ family }}
+
   <table>
     <thead>
       <tr>
@@ -92,7 +94,6 @@ noindex: true
   <input id="input-demo-horizontal" class="input" type="text" placeholder="Enter text here" />
 </div>
 
-
 ### Aside
 
 {% aside %}
@@ -117,6 +118,7 @@ noindex: true
 </figure>
 
 ## Code Example
+
 ```scss
 .nav-link {
   &:focus,
@@ -126,6 +128,7 @@ noindex: true
 ```
 
 {% include code-header.liquid file: "ResultGrid.jsx", copyable: false %}
+
 ```jsx
 const ResultGrid = (props) => {
   return (
@@ -146,6 +149,7 @@ const ResultGrid = (props) => {
 ```
 
 ## CodePen Example
+
 <p class="codepen" data-height="300" data-slug-hash="rNGOBKv" data-preview="true" data-user="necipsunmaz" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/necipsunmaz/pen/rNGOBKv">
   Keeping focus in place with load-more buttons</a> by Necip Sunmaz (<a href="https://codepen.io/necipsunmaz">@necipsunmaz</a>)
@@ -154,6 +158,7 @@ const ResultGrid = (props) => {
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Youtube Video
+
 {% include youtube-embed.liquid id: "Ewu-Evc_qNc", title: "I Beat Sekiro: Shadows Die Twice! (And It Only Took Me 1 Year...)" %}
 
 <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@0.6.2/lite-youtube.js"></script>

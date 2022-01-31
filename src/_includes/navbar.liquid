@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header-navbar font-sm" aria-label="Primary">
     <button id="hamburger-menu" class="header-navbar-button" aria-label="Menü"></button>
-    <a class="header-navbar-branding" href="/" aria-label="Home page" {% if permalink=="/" %}aria-current="page" {%
+    <a class="header-navbar-branding" title="Anasayfa" href="/" aria-label="Anasayfa" {% if permalink=="/" %}aria-current="page" {%
       endif %}>
       <img width="38" height="25" src="/assets/images/logo.svg" alt="Necip Sunmaz kişisel blog logosu."
         srcset="/assets/images/logo.svg">
@@ -9,10 +9,10 @@
     </a>
     <div class="header-navbar-menu">
       <nav class="header-navbar-links">
-        <a class="header-navbar-link home" href="/" {% if permalink=="/" %}aria-current="page" {% endif %}>Anasayfa</a>
+        <a class="header-navbar-link home" title="Anasayfa" href="/" {% if permalink=="/" %}aria-current="page" {% endif %}>Anasayfa</a>
         {%- assign navLinks="Hakkımda,Blog,İletişim" | split: ',' -%}
         {%- for link in navLinks -%}
-        <a class="header-navbar-link" href="/{{ link | slug }}/" {% if permalink==link -%} aria-current="page" {%-
+        <a class="header-navbar-link" title="{{link}}" href="/{{ link | slug }}/" {% if permalink==link -%} aria-current="page" {%-
           endif -%} {% if link=='blog' and isBlogPage -%} aria-current="page" {%- endif -%}>
           {{- link -}}
         </a>
