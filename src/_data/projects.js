@@ -5,7 +5,7 @@ const repos = {
     name: 'Fibonacci Patterns',
     getIcon: () => '📈',
     repo: 'necipsunmaz/fibonacci-patterns',
-    tech: ['js', 'typescript', 'html', 'css', 'math'],
+    tech: ['math', 'typescript', 'html', 'css'],
   },
   intern: {
     name: 'İlk Angular Projem',
