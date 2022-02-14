@@ -2,9 +2,10 @@ const Cache = require('@11ty/eleventy-cache-assets');
 
 const repos = {
   signature: {
-    getIcon: () => '✒️',
-    repo: 'necipsunmaz/ngx-signature',
-    tech: ['js', 'typescript', 'html'],
+    name: 'Fibonacci Patterns',
+    getIcon: () => '📈',
+    repo: 'necipsunmaz/fibonacci-patterns',
+    tech: ['js', 'typescript', 'html', 'css', 'math'],
   },
   intern: {
     name: 'İlk Angular Projem',
