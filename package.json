@@ -6,7 +6,7 @@
   "author": "Necip Sunmaz <sunmaznecip@gmail.com>",
   "scripts": {
     "clean:all": "rimraf _site",
-    "clean": "rimraf '_site/!(assets)' '_site/assets/!(images)'",
+    "clean": "rimraf _site",
     "debug": "DEBUG=Eleventy* ELEVENTY_ENV=development npx @11ty/eleventy --serve --incremental --port=4001",
     "serve": "npm-run-all clean --parallel serve:*",
     "serve:html": "ELEVENTY_ENV=development npx @11ty/eleventy --serve --incremental --port=4001",
