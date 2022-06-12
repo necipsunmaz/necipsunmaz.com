@@ -4,6 +4,7 @@ description: Bu yazımdı Sokrates karşılaştığı problemlere pratikler geli
 categories: [felsefe, genel kültür]
 thumbnail: thumbnail.jpg
 commentsOn: true
+isFeatured: true
 ---
 
 Hayatımızın bir çok aşamasında yaşadığımız olaylarda önümüze bazı seçenekler çıkar ve kararlar almamız gerekir. Böyle durumlarda şüphesiz değerlendirme ve düşünme hangi sonuca yöneleceğinizin ana etkenidir. Düşünce yapınızı geliştirmenizin aldığınız kararlara da olan olumlu bir etkisi olacaktır.

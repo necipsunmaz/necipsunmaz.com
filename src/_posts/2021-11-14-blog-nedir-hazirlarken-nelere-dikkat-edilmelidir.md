@@ -4,6 +4,7 @@ description: Etkili bir blog sitesi hazırlarken dikkat edilmesi gereken detayla
 categories: [blog, genel kültür]
 thumbnail: thumbnail.jpg
 commentsOn: true
+isFeatured: false
 ---
 
 Blog hazırlamak ve blogger olmayı düşünüyorsan, bu terimleri anlamak yaptığın işte sana yol gösterici ve yardımcı olacaktır.
