@@ -7,7 +7,7 @@ commentsOn: true
 isFeatured: false
 ---
 
-Blog hazırlamak ve blogger olmayı düşünüyorsan, bu terimleri anlamak yaptığın işte sana yol gösterici ve yardımcı olacaktır.
+Blog hazırlamayı ve blogger olmayı düşünüyorsan, bu terimleri anlamak yaptığın işte sana yol gösterici ve yardımcı olacaktır.
 
 Bu başlangıç kılavuzunda, "Blog" kelimesinin kökeni ve tarihçesinden başlayarak, bu terimin çokça karıştırıldığı web sitelerinden farkına değineceğim. Etkili bir blog yazısı hazırlayabilmek için sana bir yol haritası vererek güncel teknikleri seninle paylaşacağım.
 
@@ -15,21 +15,21 @@ Bu başlangıç kılavuzunda, "Blog" kelimesinin kökeni ve tarihçesinden başl
 
 ## Blog Nedir
 
-Etimolojik olarak Blog kelimesinin kökeni (World Wide) Web ve Log kelimelerinin bir araya gelmesiyle weblog (Web Günlüğü-Güncesi) kelimesinden türeyerek oluşmuştur. Fiil olarak blog, blogger ve blog yazarlığı günümüzden 1999 yılına kadar geçmişi bulunmaktadır. Weblog kelimesi kısaltması "blog" olarak 1999 yılında programcı olan Peter Merholz tarafından ortaya atılmıştır. Aynı yıl olan 1999 yılında [Blogger](https://www.blogger.com/ "Blogger") web sitesinin resmi olarak hayatımıza girmesiyle beraber günümüzde sıklıkla kullanılan bir kelime olarak karşımıza çıkmaktadır.
+Etimolojik olarak Blog kelimesi (World Wide) Web ve Log kelimelerinin bir araya gelmesiyle weblog (Web Günlüğü-Güncesi) kelimesinden türeyerek oluşmuştur. Fiil olarak blog, blogger ve blog yazarlığı günümüzden 1999' yılına kadar geçmişi bulunmaktadır. Weblog kelimesi kısaltması "blog" olarak 1999 yılında programcı olan Peter Merholz tarafından ortaya atılmıştır. Aynı yıl [Blogger](https://www.blogger.com/ "Blogger") web sitesinin resmi olarak hayatımıza girmesiyle beraber günümüzde sıklıkla kullanılan bir kelime olarak karşımıza çıkmaktadır.
 
-Geçmişte insanların kağıt ve kalemle notlar alarak tutmuş oldukları günlükler yerlerini teknolojinin de getirdiği yenilikleri göz önünde bulundurursak bloglara bırakmıştır. Kendi alanında bir çok uzman ve yazar günlüklerini defterlerde tutmak yerine açmış oldukları bloglarında yayınlamayı tercih etmişlerdir. Günümüzde bir çok kurumsal firmanın bu kervana katıldığını görebiliriz. (bkz. [IBM](https://www.ibm.com/blogs/ "IBM"), [Microsoft](https://blogs.microsoft.com/ "Microsoft")) Bu bağlamda bloglar zaman içerisinde sadece kişilerin düşüncelerini paylaştıkları platformlar olmaktan çıkmış kurumsal anlamda marka değerini arttırmak için birer araç haline de dönüşmüştür.
+Geçmişte insanların kağıt ve kalemle notlar alarak tutmuş oldukları günlükler, teknolojinin de getirdiği yeniliklerle birlikte, yerlerini bloglara bırakmıştır. Bir çok uzman ve yazar günlüklerini defterlerde tutmak yerine açmış oldukları bloglarda yayınlamayı tercih etmişlerdir. Günümüzde bir çok kurumsal firmanın bu kervana katıldığını görebiliriz. (bkz. [IBM](https://www.ibm.com/blogs/ "IBM"), [Microsoft](https://blogs.microsoft.com/ "Microsoft")) Bu bağlamda bloglar zaman içerisinde sadece kişilerin düşüncelerini paylaştıkları platformlar olmaktan çıkarak kurumsal anlamda marka değerini arttırmak için birer araç haline dönüşmüştür.
 
 ## Blogların Tarihçesi
 
 {% include img.liquid src: "history-of-blog.jpeg", alt: "Blogların tarihçesi nereden başlamıştır? Blog isminin kökeni ve tarihçesi üzerine." %}
 
-Tarihte ki ilk blogun her ne kadar o zamanlar bu sitelere kişisel ana sayfa deniyor olsa da, 1994 yılında Justin Hall tarafından oluşturulan [links.net](http://www.links.net "First blog of world") web sitesi olduğu sanılmaktadır. Weblog terimi 1997 yılına kadar ortaya atılmamasıyla beraber gelişmiş ve 2000'li yılların başında günümüz blog benzerlerinin ilk örneklerine rastlanmıştır.
+Tarihteki ilk blogun her ne kadar o zamanlar bu sitelere kişisel ana sayfa deniyor olsa da, 1994 yılında Justin Hall tarafından oluşturulan [links.net](http://www.links.net "First blog of world") web sitesi olduğu sanılmaktadır. Weblog terimi 1997 yılına kadar ortaya atılmamasıyla beraber gelişmiş ve 2000'li yılların başında günümüz blog benzerlerinin ilk örneklerine rastlanmıştır.
 
-2006 yılına gelindiğinde ise blog sayısı hızla artmış ve 50 milyon sayısına ulaşmıştır. Blog sayısında yaşanan bu büyük artışa en büyük etkenlerin başında dönemin siyasi ve ünlülerin kişisel bloglarında gündeme dair önemli açıklamalara yer vermesiydi. Güncel konuların bloglarda derinlemesine işlenmesi ve yorumların rahatlıkla bu platformlarda tartışılarak diğer insanlar tarafından eleştirilmesi bu süreçte blogları daha popüler bir hale getirdi.
+2006 yılına gelindiğinde ise blog sayısı hızla artmış ve 50 milyona ulaşmıştır. Blog sayısında yaşanan bu büyük artışa en büyük etkenlerin başında dönemin siyasi ve ünlülerinin kişisel bloglarında gündeme dair önemli açıklamalara yer vermesi gelmektedir. Güncel konuların bloglarda derinlemesine işlenmesi ve yorumların rahatlıkla bu platformlarda tartışılarak diğer insanlar tarafından eleştirilmesi bu süreçte blogları daha popüler bir hale getirmiştir.
 
-Blogların yayılmasında ve yayıncı sayısının bu kadar hızlı oranda artmasının kuşkusuz en önemli faktörlerinden bir tanesi de ücretsiz olarak sunulan platformların oluşmasıdır. 2001 yılında 1.0 versiyonu yayınlanan [Movable Type](https://www.movabletype.org/ "Movable Type") ve 2003 yılında sunulmuş olan [WordPress](https://wordpress.org/ "WordPress") en popüler blog platformları yer arasındaydı.
+Blogların yayılmasında ve yayıncı sayısının bu kadar hızlı oranda artmasında kuşkusuz en önemli faktörlerinden biri ücretsiz olarak sunulan platformların oluşmasıdır. 2001 yılında 1.0 versiyonu yayınlanan [Movable Type](https://www.movabletype.org/ "Movable Type") ve 2003 yılında sunulmuş olan [WordPress](https://wordpress.org/ "WordPress") en popüler blog platformları arasında yer almaktadır.
 
-Günümüzde bloglar popülerliğini eskisi kadar koruyamamış olasa da burada var olan birikim ve tüketim ihtiyacı zamanla mikrobloglara kaymıştır. Bir çok insan [twitter](https://twitter.com/ "twitter") ve [tumblr](https://tumblr.com/ "tumblr") gibi platformların birer mikroblog olarak görmektedir. Burada yer alan içeriklerin daha fazla kitlelere ulaşması ve takipçi sayısını arttırmanın kolay olmasından dolayı tercih etmektedir.
+Günümüzde bloglar popülerliğini eskisi kadar koruyamamış olsa da burada var olan birikim ve tüketim ihtiyacı zamanla mikrobloglara kaymıştır. Birçok insan [twitter](https://twitter.com/ "twitter") ve [tumblr](https://tumblr.com/ "tumblr") gibi platformları birer mikroblog olarak görmektedir. Bu platformların tercih edilmesinin sebebi içeriklerin daha geniş kitlelere ulaşması ve takipçi sayısını arttırmanın kolay olmasıdır.
 
 ## Blog ve Web Sitesinin Farkı Nedir?
 
@@ -37,17 +37,17 @@ Bloglar web sitesinin bir tipidir diyebiliriz. Blogları web sitelerinden ayıra
 
 Tipik web siteleri içeriklerini sayfalar halinde düzenledikleri için doğası gereği sabittir ve sık sık güncellenmez. Oysa bir blog daha dinamiktir ve içerikleri yazar tarafından sürekli güncellenir.
 
-Günümüzde her ikisinin de aynı anda olabildiği siteler yer almaktadır. Özellikle kurumsal firmalar web sitelerinde blog köşelerine yer vererek güncel yazılarını bu alanda paylaşmaktadırlar. Ancak bu web siteleri kendi başlarına blog olarak adlandırılamaz.
+Günümüzde her ikisinin de aynı anda olabildiği siteler bulunmaktadır. Özellikle kurumsal firmalar web sitelerinde blog köşelerine yer vererek güncel yazılarını bu alanda paylaşmaktadır. Ancak bu web siteleri kendi başlarına blog olarak adlandırılamaz.
 
 Blogların kategoriler ve etiketler kullanılarak düzenlenmiş makaleleri olduğunu da söyleyebilirsiniz. Öte yandan, web siteleri içeriği düzenlemek ve görüntülemek için sayfaları kullanır.
 
 ## Kimler Blog Yazarı Olabilir?
 
-Teknik olarak paylaşımda bulunmak isteyen herkes yukarıda bahsettiğimiz platformlardan birisini kullanarak hızlıca blog açabilir ve yazılarını hazırlayabilir. Ancak blog yazarı olmak için bunu sürdürülebilir kılmalı ve blogunun sürekli güncel tutmalısınız.
+Teknik olarak paylaşımda bulunmak isteyen herkes yukarıda bahsettiğimiz platformlardan birisini kullanarak hızlıca blog açabilir ve yazılarını hazırlayabilir. Ancak blog yazarı olmak için bunu sürdürülebilir kılmalı ve blogunuzu sürekli güncel tutmalısınız.
 
 ## Blog Yazısı Nasıl Olmalıdır?
 
-Blog yazıları sizin herhangi bir konu hakkında web sitenizde düşünce, tespit ve yorumlarınızı paylaşmanıza, okurlarınızın sizin hakkınızda daha fazla bilgi sahibi olmasına olanak tanır. Aynı zamanda içeriklerin kalitesi de genel olarak blogunun kalitesine doğrudan bir etkisi olacaktır. Daha kaliteli bir içerik hazırlamak ve okurlarınıza bunu sunmak için sırasıyla;
+Blog yazıları herhangi bir konu hakkında web sitenizde düşünce, tespit ve yorumlarınızı paylaşmanıza, okurlarınızın sizin hakkınızda daha fazla bilgi sahibi olmasına olanak tanır. Aynı zamanda içeriklerin kalitesinin genel olarak blogunun kalitesine doğrudan etkisi olacaktır. Daha kaliteli bir içerik hazırlamak ve okurlarınıza bunu sunmak için sırasıyla;
 
 1. Planlama: Yazın için bir konu seçmeli, taslak oluşturarak ana başlıkları belirlemelisin.
 
@@ -61,17 +61,17 @@ Blog yazıları sizin herhangi bir konu hakkında web sitenizde düşünce, tesp
 
 ### 1. Planlama
 
-Birçok blogger planlama aşamasını gözden kaçırarak doğrudan bir konu üzerinde yazı yazmaya başlar. Planlama içeriği hazırlama heyecanı içerisindeyken zaman kaybı olarak görülse de plan yapmak uzun vadede yazılarını akışlarına uygun olarak ilerlemesine ve okuyucunuzun konuyu anlamasında yardımcı olacaktır.
+Birçok blogger planlama aşamasını gözden kaçırarak doğrudan bir konu üzerinde yazı yazmaya başlar. Planlama içeriği hazırlama heyecanı içerisindeyken zaman kaybı olarak görülse de plan yapmak uzun vadede yazılarını akışa uygun olarak ilerlemesine ve okuyucunuzun konuyu anlamasında yardımcı olacaktır.
 
-Konunun belirlenmesi bir yazıya başlamadan önce alınması gereken en kritik karar aşamasıdır. Yazmak istediğiniz konuda öncelikle yazılmış olan ulaşabildiğiniz tüm kaynakları taramalı ve konu hakkında ki bilgini ölçmelisin. Yazılması gerekli olmayan bir konu hakkında yazı yazmak sana ve okurlarına bir şey kazandırmayacaktır. Farkında olmadan doğru bildiğin yanlışları yazılarında yer vererek okurlarını da yanıltabilirsin.
+Konunun belirlenmesi bir yazıya başlamadan önce alınması gereken en kritik aşamadır. Yazmak istediğiniz konuda öncelikle yazılmış olan ulaşabildiğiniz tüm kaynakları taramalı ve konu hakkındaki bilgini ölçmelisin. Yazılması gerekli olmayan bir konu hakkında yazı yazmak sana ve okurlarına bir şey kazandırmayacaktır. Farkında olmadan doğru bildiğin yanlışları yazılarında yer vererek okurlarını da yanıltabilirsin.
 
-Doğru konuyu seçtiğini ve bilgine güveniyorsan planlamanın ikinci aşamasına geçebilirsin. Burada konuyu bölümlere ayırarak bir sunum taslağı oluşturmalıdır. İçeriğinin kapsamı ve uzunluğuna göre bölümlere ayırabilir, seriler halinde yayınlanabilecek bir yol haritası planlayabilirsin.
+Doğru konuyu seçtiğine inanıyor ve bilgine güveniyorsan planlamanın ikinci aşamasına geçebilirsin. Burada konuyu bölümlere ayırarak bir sunum taslağı oluşturmalısın. İçeriğin kapsamı ve uzunluğuna göre bölümlere ayırabilir, seriler halinde yayınlanabilecek bir yol haritası planlayabilirsin.
 
 ### 2. Başlığı Belirleme
 
 Etkili bir sunumun ilk adımı ona hangi kelimelerle giriş yaptığındır. Yazına vereceğin isim de geçmişte gazete manşetlerinde olduğu gibi, içeriğe ilgiyi çekecek şekilde belirlenmeli, kolay anlaşılmalı ve merak uyandırmalıdır.
 
-Başlığı belirlerken uygulanabilecek iki ana yaklaşımdan bahsedilebilir. Bunlardan ilk olanı etkili bir başlık belirlemek ve tüm içeriği bu başlık etrafında şekillendirmektir. İkinci yöntem ise belirlediğin konuda öncelikle yazını yazarak sonrasında yazına hangi başlığın daha uygun uygun olduğunu görebilirsin.
+Başlığı belirlerken uygulanabilecek iki ana yaklaşımdan bahsedilebilir. Bunlardan ilki etkili bir başlık belirlemek ve tüm içeriği bu başlık etrafında şekillendirmektir. İkincisi ise yazım aşaması bittikten sonra uygun bir başlık belirlemektir.
 
 Hazırladığın başlıkların vermek istediğin mesajı doğrudan içermemesi okuyucuyu yazıya çekmesi için çok önemlidir. Örneğin macOS ve Windows platformlarının performanslarını karşılaştırdığınız bir yazıyı ele alırsak atılması muhtemel başlıklar;
 
@@ -101,25 +101,25 @@ Araştırmanı yaptığını ve en azından başlığını belirlediğini varsay
 
 {% include img.liquid src: "write-a-blog-post.jpeg", alt: "Araştırmanızı yaptınız ve en azından başlığınızı belirlediğinizi varsayarak artık yazınızı yazmaya hazırsınız." %}
 
-Blog yazmanın temelde iki ana farklı yöntemi bulunmaktadır. Önceden hazırlamış olduğunuz bir şablon üzerinde iş akışlarına uygun olarak yazabilir veya oturup bir taslağın tamamını tek seferde yazarak sonrasında parçalara ayırabilirsin.
+Blog yazmanın temelde iki farklı yöntemi bulunmaktadır. Önceden hazırlamış olduğun bir şablon üzerinde iş akışına uygun olarak yazabilir veya oturup bir taslağın tamamını tek seferde yazarak sonrasında parçalara ayırabilirsin.
 
-Kısa aralıklar ile daha verimli çalıştığınızı düşünebilirsin ancak bu aralıkları ne kadar açarsan yazılarının ana temadan uzaklaşmasına ve sürekli bir şeyler ekleyerek konudan sapmasın neden olabilir. Yazının hedeflerini sürekli göz önünde bulundurarak vermek istediğin mesajı olabildiğince sade ve anlaşılır bir dil ile okuyucuna aktarmalısın.
+Kısa aralıklar ile daha verimli çalıştığını düşünebilirsin ancak bu aralıkları açman yazılarının ana temadan uzaklaşmasına ve sürekli bir şeyler ekleyerek konudan sapmasın neden olabilir. Yazının hedeflerini sürekli göz önünde bulundurarak vermek istediğin mesajı olabildiğince sade ve anlaşılır bir dil ile okuyucuna aktarmalısın.
 
-Yazını yazarken yanlış veya doğru diye bir şey yoktur. Çoğu beceride olduğu gibi ne kadar yazarsan o kadar kolay ve doğal bir hale gelecektir. Zaman içerisinde pratikler yaparak bu konuda ki en iyi çalışma stilini yakalayacak ve okuyucunuzun ilgisini çekebilecek yazılar yazabileceksin.
+Yazını yazarken yanlış veya doğru diye bir şey yoktur. Çoğu beceride olduğu gibi ne kadar yazarsan o kadar kolay ve doğal bir hale gelecektir. Zaman içerisinde pratikler yaparak bu konudaki en iyi çalışma stilini yakalayacak ve okuyucunun ilgisini çekecek yazılar yazabileceksin.
 
 ### 4. Görseller ve Mizah
 
 {% include img.liquid src: "funny-blog-post.jpeg", alt: "Görsel ve mizah ile yazılarınızın okunurluğunu ve etkileşimini arttırabilirsiniz." %}
 
-Özellikle web sitelerinin okuyucu kitlesinin dikkati ve ilgisi çok çabuk dağılabildiği için mizahı ve görselleri bu ilgiyi toplamak için kullanabilirsin. Bu durum aynı zamanda yazılarının daha fazla etkileşim almasını da sağlayacaktır. Ancak bunun dozunu çok iyi ayarlamalısın. Fazla laubali bir yaklaşım okurunu kaçırabileceği gibi gereksiz ve çok fazla görsel kullanman da dikkatini dağıtacaktır.
+Özellikle web sitelerinin okuyucu kitlesinin dikkati ve ilgisi çok çabuk dağılabildiği için mizahı ve görselleri bu ilgiyi toplamak için kullanabilirsin. Bu durum aynı zamanda yazılarının daha fazla etkileşim almasını da sağlayacaktır. Ancak bunun dozunu çok iyi ayarlamalısın. Fazla laubali bir yaklaşım okuru kaçırabileceği gibi gereksiz ve çok fazla görsel kullanman da dikkatini dağıtacaktır.
 
 ### 5. Kontrol ve Düzenleme
 
-Pek çok kişi bu aşamayı yakaladıkları yazım hatalarını gidermek ve gereksiz kelimelerin çıkarılması olduğunu düşünür. Bu bir bakıma doğru olsa da tek başına yeterli değildir. Yazının akışını bozan kısımlarını tekrar düzenlemeli, gerekirse yazmak için harcadığınız saatleri de heba ederek fazla olan kısımlarını kaldırmalısın.
+Pek çok kişi, bu aşamanın yazım hatalarının giderilmesi ve gereksiz kelimelerin çıkarılması olduğunu düşünür. Bu bir bakıma doğru olsa da tek başına yeterli değildir. Yazının akışını bozan kısımları tekrar düzenlemeli, gerekirse yazmak için harcadığın saatleri heba ederek fazlalıkları kaldırmalısın.
 
 Ne kadar çok yazdığının genelde okuyucu için bir önemi yoktur. Okuyucu aradığı cevabı ne kadar hızlı ve doğru alabildiğine odaklanır. Dolayısıyla sadede hızlıca gelecek, okuyucuyu dolambaçlı yollarda yormayacak şekilde yazını hazırlamalı ve kontrol aşamalarında buna dikkat etmelisin.
 
-Hiç bir şey okuyucuyu devasa metin duvarlarından daha fazla korkutamaz. Cümlelerini ve paragraflarını olabildiğince kısa tutup, buna uymayan alanları kırpmak ve kesmekten çekinmeyin.
+Hiçbir şey okuyucuyu devasa metin duvarlarından daha fazla korkutamaz. Cümlelerini ve paragraflarını olabildiğince kısa tutup, buna uymayan alanları kırpmak ve kesmekten çekinmemelisin.
 
 ## Sonuç
 

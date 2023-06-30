@@ -1,13 +1,13 @@
 ---
 title: Sokratik Düşünme ve Sorgulama Sanatı
-description: Bu yazımdı Sokrates karşılaştığı problemlere pratikler geliştirirken izlediği yolların neler olduğu ve yaklaşımları değerlendireceğiz.
+description: Bu yazımda Sokrates karşılaştığı problemlere pratikler geliştirirken izlediği yolların neler olduğu ve yaklaşımları değerlendireceğiz.
 categories: [felsefe, genel kültür]
 thumbnail: thumbnail.jpg
 commentsOn: true
 isFeatured: true
 ---
 
-Hayatımızın bir çok aşamasında yaşadığımız olaylarda önümüze bazı seçenekler çıkar ve kararlar almamız gerekir. Böyle durumlarda şüphesiz değerlendirme ve düşünme hangi sonuca yöneleceğinizin ana etkenidir. Düşünce yapınızı geliştirmenizin aldığınız kararlara da olan olumlu bir etkisi olacaktır.
+Hayatımızın bir çok aşamasında yaşadığımız olaylarda önümüze bazı seçenekler çıkar ve kararlar almamız gerekir. Böyle durumlarda şüphesiz değerlendirme ve düşünme hangi sonuca yöneleceğinizin ana etkenidir. Düşünce yapınızı geliştirmenizin aldığınız kararlara da olumlu bir etkisi olacaktır.
 
 Eleştirel düşünme, düşünce üzerine bir düşünme yeteneğidir. Bu yazımda derinlemesine düşünme ve düşünceleri mantık süzgecinden geçirmeyi ele alacak, akıl yürütme ve düşünme üzerinde örneklemeler yapacağız.
 
