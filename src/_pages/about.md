@@ -66,7 +66,7 @@ savını ortaya atarak eli [Hunter X Hunter](https://tr.wikipedia.org/wiki/Hunte
 
 {% include image.liquid src: '/assets/images/geralt-of-rivia.png', alt: 'The Witcher 3: Wild Hunt - Geralt Of Rivia', clickable: false, className: "float right", lazy: true %}
 
-Kalan zamanımı ise kitap okuyarak veya video oyunları oynayarak geçiririm. Genelde felsefi ve [klasik romanlar](https://tr.wikipedia.org/wiki/Kategori:Klasik_romanlar "klasik romanlar") okur ve üzerlerine bir şeyler karalarım. Fanatik denebilecek kadar [Yaşar Kemal](https://tr.wikipedia.org/wiki/Ya%C5%9Far_Kemal "Yaşar Kemal") ve [Balzac](https://tr.wikipedia.org/wiki/Honor%C3%A9_de_Balzac "Balzac") hayranıyım. Fantastik roman türünde Yüzüklerin Efendisi ve [The Witcher](https://tr.wikipedia.org/wiki/The_Witcher "The Witcher") serilerini oldukça seviyorum.
+Kalan zamanımı ise kitap okuyarak veya video oyunları oynayarak geçiririm. Genelde felsefe ve [klasik romanlar](https://tr.wikipedia.org/wiki/Kategori:Klasik_romanlar "klasik romanlar") okur, üzerlerine bir şeyler karalarım. Fanatik denebilecek kadar [Yaşar Kemal](https://tr.wikipedia.org/wiki/Ya%C5%9Far_Kemal "Yaşar Kemal") ve [Balzac](https://tr.wikipedia.org/wiki/Honor%C3%A9_de_Balzac "Balzac") hayranıyım. Fantastik roman türünde Yüzüklerin Efendisi ve [The Witcher](https://tr.wikipedia.org/wiki/The_Witcher "The Witcher") serilerini oldukça seviyorum.
 
 [The Witcher 3: Wild Hunt](https://tr.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt "The Witcher 3: Wild Hunt") oyunu ve dizilerini de izlemiş birisi olarak [Andrzej Sapkowski](https://tr.wikipedia.org/wiki/Andrzej_Sapkowski "Andrzej Sapkowski")'nin bizlere harika bir eser bıraktığını söyleyebilirim. Gitmeden önce oyundan kısa bir bölümü sizinle paylaşmak istiyorum. Keyifli izlemeler.
 
