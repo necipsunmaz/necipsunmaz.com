@@ -3,6 +3,7 @@ title: Blog Nedir ve Hazırlanırken Nelere Dikkat Edilmelidir?
 description: Etkili bir blog sitesi hazırlarken dikkat edilmesi gereken detaylar nelerdir? Blog sitelerinin web sitelerinden farkı nedir?
 categories: [blog, genel kültür]
 thumbnail: thumbnail.jpg
+publish: true
 commentsOn: true
 isFeatured: false
 ---

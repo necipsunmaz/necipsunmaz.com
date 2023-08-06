@@ -13,5 +13,5 @@ eleventyComputed:
 {% include post-previews.liquid posts: posts, titleLevel: 2 %}
 {%- assign numPages = pagination.hrefs | size -%}
 {%- if numPages > 1 -%}
-  {%- include pagination.liquid hrefs: pagination.hrefs -%}
+{%- include pagination.liquid hrefs: pagination.hrefs -%}
 {%- endif -%}

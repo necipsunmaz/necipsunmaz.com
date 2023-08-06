@@ -7,7 +7,8 @@ const { dir } = require('../constants');
 /** Returns all blog posts as a collection. */
 const getAllPosts = (collection) => {
   const posts = collection.getFilteredByGlob(`${dir.input}/_posts/*.md`);
-  return posts.reverse();
+  const publishedPosts = posts.filter((post) => post.data.publish == true);
+  return publishedPosts.reverse();
 };
 
 /** Returns all unique categories as a collection. */

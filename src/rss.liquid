@@ -8,8 +8,11 @@ excludeFromSitemap: true
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ env.title }}</title>
   <subtitle>{{ env.description }}</subtitle>
-  <link href="{{ 'feed.xml' | toAbsoluteUrl }}" rel="self"/>
-  <link href="{{ env.url }}/" rel="alternate" type="text/html"/>
+  <link href="{{ 'feed.xml' | toAbsoluteUrl }}" rel="self" />
+  <link
+    href="{{ env.url }}/"
+    rel="alternate"
+    type="text/html" />
   <updated>{{ collections.posts | getLatestCollectionItemDate | toIsoString }}</updated>
   <id>{{ env.url }}/</id>
   <author>
@@ -17,17 +20,17 @@ excludeFromSitemap: true
     <email>{{ env.email }}</email>
   </author>
   {% for post in collections.posts %}
-  {%- assign absolute_post_url = env.url | append: post.url -%}
-  <entry>
-    <title>{{ post.data.title | escape }}</title>
-    <link href="{{ absolute_post_url }}"/>
-    {%- assign dateUpdated = post.data.lastUpdated | default: post.date -%}
-    <updated>{{ dateUpdated | toIsoString }}</updated>
-    <id>{{ absolute_post_url }}</id>
-    {%- for category in post.data.categories %}
-      <category term="{{ category }}" />
-    {%- endfor %}
-    <content type="html">{{ post.data.description | escape }}</content>
-  </entry>
+    {%- assign absolute_post_url = env.url | append: post.url -%}
+    <entry>
+      <title>{{ post.data.title | escape }}</title>
+      <link href="{{ absolute_post_url }}" />
+      {%- assign dateUpdated = post.data.lastUpdated | default: post.date -%}
+      <updated>{{ dateUpdated | toIsoString }}</updated>
+      <id>{{ absolute_post_url }}</id>
+      {%- for category in post.data.categories %}
+        <category term="{{ category }}" />
+      {%- endfor %}
+      <content type="html">{{ post.data.description | escape }}</content>
+    </entry>
   {% endfor %}
 </feed>

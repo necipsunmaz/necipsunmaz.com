@@ -3,6 +3,7 @@ title: Sokratik Düşünme ve Sorgulama Sanatı
 description: Bu yazımda Sokrates karşılaştığı problemlere pratikler geliştirirken izlediği yolların neler olduğu ve yaklaşımları değerlendireceğiz.
 categories: [felsefe, genel kültür]
 thumbnail: thumbnail.jpg
+publish: true
 commentsOn: true
 isFeatured: true
 ---
